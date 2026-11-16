@@ -1,0 +1,8 @@
+{
+  "name": "tiktok-downloader",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Responsive TikTok video downloader starter with a yt-dlp backend",
+  "scripts": { "start": "node server.js" },
+  "dependencies": { "express": "^4.21.2" }
+}
