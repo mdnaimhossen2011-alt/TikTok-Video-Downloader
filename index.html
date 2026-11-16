@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#542df1">
+  <meta name="description" content="Download TikTok videos and audio for personal use.">
+  <title>TikTok Downloader — Save videos online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="SnapTik home"><span class="brand-mark">↓</span><span>SNAPTIK</span></a>
+    <a class="install" href="#how">✦ <span>How to use</span></a>
+    <button class="menu" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav id="nav"><a href="#features">Features</a><a href="#how">How it works</a><a href="#faq">FAQ</a></nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <span class="eyebrow">FAST · SIMPLE · ONLINE</span>
+        <h1>TikTok Video Downloader</h1>
+        <p class="intro">Save videos and audio from TikTok in a few simple steps.</p>
+        <form id="downloadForm" class="download-form">
+          <div class="url-wrap">
+            <input id="videoUrl" type="url" placeholder="Paste TikTok video link here" autocomplete="url" required>
+            <button class="paste" type="button" id="pasteBtn">▣ <span>Paste</span></button>
+          </div>
+          <div class="format-row" role="group" aria-label="Download format">
+            <label class="format-option active"><input type="radio" name="format" value="mp4" checked> Video · MP4</label>
+            <label class="format-option"><input type="radio" name="format" value="mp3"> Audio · MP3</label>
+          </div>
+          <button class="download-btn" id="downloadBtn" type="submit"><span>Download</span><span class="arrow">↓</span></button>
+          <p id="status" class="status" role="status" aria-live="polite"></p>
+        </form>
+        <div class="trust-row"><span>✓ No account needed</span><span>✓ Simple process</span><span>✓ Mobile friendly</span></div>
+      </div>
+      <div class="hero-glow"></div>
+    </section>
+
+    <section class="features section" id="features">
+      <div class="section-heading"><span class="eyebrow purple">WHY USE SNAPTIK</span><h2>Everything you need</h2><p>A clean, easy way to save content you have permission to download.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="feature-icon">∞</div><h3>Easy access</h3><p>Use the downloader whenever you need it. No account is required.</p></article>
+        <article class="feature-card"><div class="feature-icon">✦</div><h3>Video & audio</h3><p>Choose MP4 video or MP3 audio when the source supports it.</p></article>
+        <article class="feature-card"><div class="feature-icon">▣</div><h3>Works on mobile</h3><p>A responsive layout designed for phones, tablets and desktops.</p></article>
+      </div>
+    </section>
+
+    <section class="how-section" id="how">
+      <div class="how-card">
+        <div class="section-heading light"><span class="eyebrow">THREE SIMPLE STEPS</span><h2>How to download TikTok videos</h2><p>Follow these steps to save a video you own or have permission to use.</p></div>
+        <div class="steps">
+          <article class="step"><span class="step-no">01</span><div><h3>Find a TikTok video</h3><p>Open TikTok and find the video you want to save.</p></div></article>
+          <article class="step"><span class="step-no">02</span><div><h3>Copy the link</h3><p>Tap Share, then choose Copy link from the menu.</p></div></article>
+          <article class="step"><span class="step-no">03</span><div><h3>Paste and download</h3><p>Paste the link above, choose MP4 or MP3, then press Download.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq section" id="faq">
+      <div class="section-heading"><span class="eyebrow purple">NEED HELP?</span><h2>Frequently asked questions</h2></div>
+      <details><summary>Is this downloader free?</summary><p>This starter website does not require an account. Hosting and server usage may have costs depending on your provider.</p></details>
+      <details><summary>Can I download every TikTok video?</summary><p>No. Private, restricted, removed or unsupported videos may not be available. No-watermark downloads are not guaranteed.</p></details>
+      <details><summary>Can I use it on my phone?</summary><p>Yes. The website layout adapts to mobile and desktop screens.</p></details>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">↓</span><span>SNAPTIK</span></a><p>Download responsibly. Respect creators and copyright.</p><small>© <span id="year"></span> SnapTik. Independent demo project; not affiliated with TikTok.</small></footer>
+  <script src="/app.js"></script>
+</body>
+</html>
